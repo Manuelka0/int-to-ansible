@@ -25,4 +25,7 @@
      register: result
      tags: show
 
-   - name: Print resultsta
+   - name: Print resultsta	
+     debug:
+       var: result.stdout_lines
+     tags: show
